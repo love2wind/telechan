@@ -73,7 +73,7 @@ export async function useWebhook(req: NowRequest, res: NowResponse) {
 				if( markdown != "" )
 				{
 					content += String(markdown);
-					params.append("parse_mode","Html");
+					params.append("parse_mode","MarkdownV2");
 				}
 				
 				params.append("text",content);
